@@ -272,6 +272,18 @@ section {
   opacity: 0.8;
 }
 
+.home-imgHover img.hover-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 3s;
+  opacity: 1;
+}
+
+.home-imgHover:hover img.hover-image {
+  opacity: 0.2;
+}
+
 .about {
   display: flex;
   justify-content: center;
