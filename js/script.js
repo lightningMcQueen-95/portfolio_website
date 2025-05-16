@@ -55,11 +55,11 @@ window.onscroll = () => {
 // contact us
 function sendMail(){
   let params = {
-    name: document.getElementsById("full_name").value,
-    emaiL: document.getElementsById("email").value,
-    subject: document.getElementsById("subject").value,
-    number: document.getElementsById("mobile_number").value,
-    message: document.getElementsById("message").value,
+    name: document.getElementById("full_name").value,
+    email: document.getElementById("email").value,
+    subject: document.getElementById("subject").value,
+    number: document.getElementById("mobile_number").value,
+    message: document.getElementById("message").value,
   };
 
   emailjs.send("service_pso3r9g","template_ivq6xzq",params).then(alert("Email Sent!!"));
