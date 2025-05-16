@@ -60,7 +60,7 @@ function sendMail(){
     subject : document.getElementsById("subject").value,
     number : document.getElementsById("mobile_number").value,
     message : document.getElementsById("message").value
-  }
+  };
 
   emailjs.send("service_pso3r9g","template_ivq6xzq",params).then(alert("Email Sent!!"));
 }
