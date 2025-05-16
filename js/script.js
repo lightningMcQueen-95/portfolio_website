@@ -51,3 +51,16 @@ window.onscroll = () => {
     this.innerHeight + this.scrollY >= document.scrollingElement.scrollHeight
   );
 };
+
+// contact us
+function sendMail(){
+  let params = {
+    name: document.getElementsByName("full_name").value,
+    email: document.getElementsByName("email").value,
+    subject: document.getElementsByName("subject").value,
+    number: document.getElementsByName("mobile_number").value,
+    message: document.getElementsByName("message").value,
+  };
+
+  emailjs.send("service_pso3r9g","template_ivq6xzq",params).then(alert("Email Sent!!"));
+}
