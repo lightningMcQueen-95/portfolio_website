@@ -63,4 +63,4 @@ function sendMail(){
   };
 
   emailjs.send("service_pso3r9g","template_ivq6xzq",params).then(alert("Email Sent!!"));
-}
+};
